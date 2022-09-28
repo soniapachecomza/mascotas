@@ -272,8 +272,16 @@ span {
   width: 40px;
 }
 
+.zoom{
+  transition: transform 1s;
+}
+
+.zoom :hover {
+  transform: scale(1.5);
+}
+
 .pie-pagina .grupo2 {
-  background-color: rgb(138, 252, 214);
+  background-color: rgb(191, 85, 252);
   padding: 15px 10px;
   text-align: center;
 }
