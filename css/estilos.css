@@ -327,3 +327,44 @@ span{
     padding: 35px, 0px;
   }
 }
+/*
+.carrousel{
+  width: 90%;
+  max-width: 120em;
+  padding:2em;
+  
+
+}
+.carrousel .principal{
+  width: 200%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding:2em;
+}
+.carrousel .principal .img{
+  width: calc(100/3);
+  min-height: 10vh;
+
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+.carrousel .puntos{
+  width: 100%;
+  margin: 1em 0 0;
+  padding:1em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+}
+.carrousel .punto{
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+}
+.carrousel .punto.activo{
+  background-color: orange;
+} */
