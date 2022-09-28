@@ -75,8 +75,8 @@ nav .enlaces {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .enlaces a {
@@ -86,43 +86,38 @@ nav .enlaces a {
 nav .enlaces a:hover {
   color: #707070;
 }
-
-.switch {
-  background: #343D58;
-  border-radius: 1000px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
+.switch{
+	background: #343D58;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
 }
-
-.switch::after {
+.switch::after{
   content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background: #F1F1F1;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100px;
-  transition: .3s ease all;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: #F1F1F1;
+	top: 0;
+	left: 0;
+	right: unset;
+	border-radius: 100px;
+	transition: .3s ease all;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
 }
-
-#active {
+.active{
   background: orange;
   color: #000;
 }
-
-#active::after {
+.active::after{
   right: 0;
   left: unset;
 }
-
-span {
+span{
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -130,13 +125,38 @@ span {
   background: none;
   color: #fff;
 }
-
+.usuario{
+  content: '';
+  border-radius: 18px 18px 18px 18px;
+  padding: 9px;
+  background:#ffba3a;
+  top: 150px;
+  margin-left: 12px;
+  border: none;
+}
+.ingreso{
+  left: 15px;
+  color: #fff;
+}
+.ingreso {
+  position: relative;
+  text-align: center;
+  margin-left: 2px;
+}
+.precio{
+  position: relative;
+  top: 130px;
+  right: 100px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
 .grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 40px 20px;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   padding: 40px 0;
 }
 
@@ -145,35 +165,31 @@ span {
   padding: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
-  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
   min-height: 195px;
   margin-top: 50px;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
 }
-
-#color1 {
+#color1{
   background: rgb(138, 252, 214);
 
 }
-
-#color2 {
+#color2{
   background: rgb(210, 138, 252);
 
 }
-
-#color3 {
+#color3{
   background: rgb(245, 214, 158);
 
 }
-
 .grid .card img {
   vertical-align: top;
   border-radius: 7px;
@@ -182,7 +198,7 @@ span {
   width: calc(100% - 40px);
   max-height: 165px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .grid .card .botones {
@@ -192,7 +208,7 @@ span {
   display: grid;
   grid-gap: 20px;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .grid .card .botones .boton {
@@ -222,8 +238,21 @@ span {
 .grid .card .botones .boton.secundario:hover {
   background: #ACABAB;
 }
-
-/*# sourceMappingURL=estilos.css.map */
+.product{
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  right:25px;
+  top:125px;
+}
+.alias{
+  position: relative;
+  font-size: 30px;
+  right:125px;
+  top:125px;
+}
+/*pie */
 .pie-pagina {
   width: 100%;
   background-color: rgb(210, 138, 252);
