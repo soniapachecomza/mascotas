@@ -75,8 +75,8 @@ nav .enlaces {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .enlaces a {
@@ -86,38 +86,43 @@ nav .enlaces a {
 nav .enlaces a:hover {
   color: #707070;
 }
-.switch{
-	background: #343D58;
-	border-radius: 1000px;
-	border: none;
-	position: relative;
-	cursor: pointer;
-	display: flex;
-	outline: none;
+
+.switch {
+  background: #343D58;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
 }
-.switch::after{
+
+.switch::after {
   content: "";
-	display: block;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	background: #F1F1F1;
-	top: 0;
-	left: 0;
-	right: unset;
-	border-radius: 100px;
-	transition: .3s ease all;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
 }
-.active{
+
+.active {
   background: orange;
   color: #000;
 }
-.active::after{
+
+.active::after {
   right: 0;
   left: unset;
 }
-span{
+
+span {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -125,25 +130,29 @@ span{
   background: none;
   color: #fff;
 }
-.usuario{
+
+.usuario {
   content: '';
   border-radius: 18px 18px 18px 18px;
   padding: 9px;
-  background:#ffba3a;
+  background: #ffba3a;
   top: 150px;
   margin-left: 12px;
   border: none;
 }
-.ingreso{
+
+.ingreso {
   left: 15px;
   color: #fff;
 }
+
 .ingreso {
   position: relative;
   text-align: center;
   margin-left: 2px;
 }
-.precio{
+
+.precio {
   position: relative;
   top: 130px;
   right: 100px;
@@ -151,12 +160,13 @@ span{
   text-align: center;
   font-weight: bold;
 }
+
 .grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 40px 20px;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 40px 0;
 }
 
@@ -165,31 +175,35 @@ span{
   padding: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
-          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   position: relative;
   min-height: 195px;
   margin-top: 50px;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
 }
-#color1{
+
+#color1 {
   background: rgb(138, 252, 214);
 
 }
-#color2{
+
+#color2 {
   background: rgb(210, 138, 252);
 
 }
-#color3{
+
+#color3 {
   background: rgb(245, 214, 158);
 
 }
+
 .grid .card img {
   vertical-align: top;
   border-radius: 7px;
@@ -198,7 +212,7 @@ span{
   width: calc(100% - 40px);
   max-height: 165px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .grid .card .botones {
@@ -208,7 +222,7 @@ span{
   display: grid;
   grid-gap: 20px;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid .card .botones .boton {
@@ -238,20 +252,23 @@ span{
 .grid .card .botones .boton.secundario:hover {
   background: #ACABAB;
 }
-.product{
+
+.product {
   position: relative;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  right:25px;
-  top:125px;
+  right: 25px;
+  top: 125px;
 }
-.alias{
+
+.alias {
   position: relative;
   font-size: 30px;
-  right:125px;
-  top:125px;
+  right: 125px;
+  top: 125px;
 }
+
 /*pie */
 .pie-pagina {
   width: 100%;
@@ -301,7 +318,7 @@ span{
   width: 40px;
 }
 
-.zoom{
+.zoom {
   transition: transform 1s;
 }
 
@@ -327,44 +344,117 @@ span{
     padding: 35px, 0px;
   }
 }
-/*
-.carrousel{
-  width: 90%;
-  max-width: 120em;
-  padding:2em;
-  
 
+* {
+  box-sizing: border-box
 }
-.carrousel .principal{
-  width: 200%;
-  
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding:2em;
-}
-.carrousel .principal .img{
-  width: calc(100/3);
-  min-height: 10vh;
 
-  transition: all .5s ease;
-  transform: translateX(0%);
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
 }
-.carrousel .puntos{
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
   width: 100%;
-  margin: 1em 0 0;
-  padding:1em;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  text-align: center;
+}
 
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
-.carrousel .punto{
-  width: 2em;
-  height: 2em;
-  margin: 1em 1em 0;
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.carrousel .punto.activo{
-  background-color: orange;
-} */
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+/*.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}*/
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}

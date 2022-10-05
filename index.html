@@ -43,20 +43,40 @@
 		crossorigin="anonymous"></script>
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>
-	<!--<main>	
-		<div class="carrousel">
-			<div class="principal">
-				 <img src="#" alt="imagen 1" class="img">
-				 <img src="#" alt="imagen 2" class="img">
-				 <img src="#" alt="imagen 3" class="img">
+	<main>
+		<div class="slideshow-container">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 3</div>
+				<img src="./img/1.jpg" style="width:100%">
+				<div class="text">Imagen uno</div>
 			</div>
-			<ul class="puntos">
-				<li class="punto activo"></li>
-				<li class="punto"></li>
-				<li class="punto"></li>
-			</ul>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 3</div>
+				<img src="./img/2.jpg" style="width:100%">
+				<div class="text">Imagen 2</div>
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 3</div>
+				<img src="./img/3.jpg" style="width:100%">
+				<div class="text">imagen tres</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
 		</div>
-	</main>-->
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+	</main>
 </body>
 
 <footer class="pie-pagina">
