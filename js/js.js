@@ -69,9 +69,3 @@ function leerTexto(e) {
 
     console.log(datos);
 }
-
-
-
-
-
-
