@@ -4,34 +4,40 @@ btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('.dark');
     btnSwitch.classList.toogle('.active');
 });
+//carrusel D:
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".sliderSection");
+let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
-let slideIndex = 1;
-showSlides(slideIndex);
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function Next() {
+    let sliderSectionFirst = document.querySelectorAll(".sliderSection")[0];
+    slider.style.marginLeft = "-200%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function () {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement(`beforeend`, sliderSectionFirst);
+        slider.style.marginLeft = "-100%";
+    }, 500);
 }
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function Prev() {
+    let sliderSection = document.querySelectorAll(".sliderSection");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function () {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin', sliderSectionFirst);
+        slider.style.marginLeft = "-100%";
+    }, 500);
 }
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-
-
+btnRight.addEventListener('click', function () {
+    Next();
+});
+btnLeft.addEventListener('click', function () {
+    Prev();
+});

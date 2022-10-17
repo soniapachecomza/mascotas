@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 	<!--Favicon-->
 	<link rel="icon" type="image/jpg" href="./img/favicon.png" />
-		<!--CSS-->
+	<!--CSS-->
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -41,41 +41,55 @@
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>
 	<main>
-		<div class="slideshow-container">
-
-			<div class="mySlides">
-				<div class="numbertext">1 / 3</div>
-				<img src="./img/1.jpg" style="width:100%">
-				<div class="text">Imagen uno</div>
+		<div class="container-slider">
+			<div class="slider" id="slider">
+				<div class="sliderSection">
+					<img src="./img/1.jpg" alt="" class="sliderimg">
+					<div class="cuerpo">
+						<h5>cuerpo</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="sliderSection">
+					<img src="./img/2.jpg" alt="" class="sliderimg">
+					<div class="cuerpo">
+						<h5>cuerpo</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="sliderSection"><img src="./img/3.jpg" alt="" class="sliderimg">
+					<div class="cuerpo">
+						<h5>cuerpo</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="sliderSection"><img src="./img/4.jpg" alt="" class="sliderimg">
+					<div class="cuerpo">
+						<h5>cuerpo</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="sliderSection"><img src="./img/5.jpg" alt="" class="sliderimg">
+					<div class="cuerpo">
+						<h5>cuerpo</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="sliderSection"><img src="./img/7.jpg" alt="" class="sliderimg">
+					<div class="cuerpo">
+						<h5>cuerpo</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">2 / 3</div>
-				<img src="./img/2.jpg" style="width:100%">
-				<div class="text">Imagen 2</div>
-			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">3 / 3</div>
-				<img src="./img/3.jpg" style="width:100%">
-				<div class="text">imagen tres</div>
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1)">❮</a>
-			<a class="next" onclick="plusSlides(1)">❯</a>
-
+			<div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+			<div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
 		</div>
-		<br>
-
-		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-		</div>
-
+		<script src="js/main.js"></script>
 	</main>
-</body>
 
+</body>
+<br><br>
 <footer class="pie-pagina">
 	<hr>
 	<div class="grupo1">
