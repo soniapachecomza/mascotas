@@ -521,7 +521,7 @@ body {
 
 /*carrusel*/
 .container-slider {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   margin: auto;
   overflow: hidden;
@@ -536,7 +536,7 @@ body {
   margin-left: -100%;
 }
 
-.sliderSection {
+.slider--section {
   width: 100%;
 }
 
@@ -548,16 +548,16 @@ body {
 }
 
 .cuerpo {
-  position: absolute;
+  position:absolute;
   bottom: 0px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.6);
-  text-align: center;
 }
 
 .cuerpo h5,
 .cuerpo p {
   margin: 0;
+  text-align: center;
 }
 
 .slider__btn {
