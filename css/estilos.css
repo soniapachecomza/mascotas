@@ -151,10 +151,11 @@ span {
   text-align: center;
   margin-left: 2px;
 }
+
 /*Cards de producto*/
 
 .precio {
-  position :fixed ;
+  position: fixed;
   padding: 5px 15px;
   top: 250px;
   right: 100px;
@@ -170,7 +171,7 @@ span {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 40px 0;
- place-items: center;
+  place-items: center;
 }
 
 .grid .card {
@@ -217,10 +218,10 @@ span {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.grid .card img:hover
-{
+
+.grid .card img:hover {
   transform: scale(1.2);
-  transform-style:preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .grid .card .botones {
@@ -269,7 +270,7 @@ span {
   right: 25px;
   padding: 5px 15px;
   top: 200px;
-  
+
 }
 
 .alias {
@@ -536,7 +537,9 @@ body {
   margin-top: 25px;
   border-radius: 0.5rem;
   overflow: hidden;
-  
+  color:black;
+  text-transform: uppercase;
+
 }
 
 .titulo_index h1 {
@@ -546,7 +549,8 @@ body {
   text-align: center;
   text-decoration-line: underline;
 }
-.titulo_index p{
+
+.titulo_index p {
   font-size: 50px;
   position: relative;
 }
@@ -578,7 +582,7 @@ body {
 }
 
 .card__father:hover .card {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 
@@ -664,7 +668,7 @@ body {
 }
 
 /*popusp*/
-.modal_d{
+.modal_d {
   position: fixed;
   top: 0;
   left: 0;
@@ -679,7 +683,7 @@ body {
   --transition: transform .8s;
 }
 
-.modalv{
+.modalv {
   position: fixed;
   top: 0;
   left: 0;
@@ -694,51 +698,7 @@ body {
   --transition: transform .8s;
 }
 
-.modals
-  {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #111111bd;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s .9s;
-    --transform: translateY(-100vh);
-    --transition: transform .8s;
-  }
-.modalk{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #111111bd;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .6s .9s;
-  --transform: translateY(-100vh);
-  --transition: transform .8s;
-}
-.modalmym
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #111111bd;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .6s .9s;
-  --transform: translateY(-100vh);
-  --transition: transform .8s;
-}
-.modalcleo{
+.modals {
   position: fixed;
   top: 0;
   left: 0;
@@ -753,7 +713,52 @@ body {
   --transition: transform .8s;
 }
 
-.modal--show{
+.modalk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+}
+
+.modalmym {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+}
+
+.modalcleo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+}
+
+.modal--show {
   opacity: 1;
   pointer-events: unset;
   transition: opacity .6s;
@@ -761,7 +766,7 @@ body {
   --transition: transform .8s .8s;
 }
 
-.modal__container{
+.modal__container {
   margin: auto;
   width: 90%;
   max-width: 600px;
@@ -774,128 +779,215 @@ body {
   place-items: center;
   grid-auto-columns: 100%;
   transform: var(--transform);
-  transition:var(--transition);
+  transition: var(--transition);
 }
 
-.modal__title{
+.modal__title {
   font-size: 2rem;
 }
 
-.modal__paragraph{
+.modal__paragraph {
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-.modal__img{
+.modal__img {
   width: 90%;
   max-width: 300px;
 }
 
-.modal__close_v{
+.modal__close_v {
   text-decoration: none;
   color: #fff;
   background-color: #ffa755;
   padding: 1em 3em;
-  border: 1px solid ;
-  border-radius: 6px;
-  display: inline-block;
-  font-weight: 300;
-  transition: background-color .3s;
-}
-.modal__close_c{
-  text-decoration: none;
-  color: #fff;
-  background-color: #ffa755;
-  padding: 1em 3em;
-  border: 1px solid ;
-  border-radius: 6px;
-  display: inline-block;
-  font-weight: 300;
-  transition: background-color .3s;
-}
-.modal__close_mym{
-  text-decoration: none;
-  color: #fff;
-  background-color: #ffa755;
-  padding: 1em 3em;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 6px;
   display: inline-block;
   font-weight: 300;
   transition: background-color .3s;
 }
 
-.modal__close_k{
+.modal__close_c {
   text-decoration: none;
   color: #fff;
   background-color: #ffa755;
   padding: 1em 3em;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 6px;
   display: inline-block;
   font-weight: 300;
   transition: background-color .3s;
 }
 
-.modal__close_s{
+.modal__close_mym {
   text-decoration: none;
   color: #fff;
   background-color: #ffa755;
   padding: 1em 3em;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 6px;
   display: inline-block;
   font-weight: 300;
   transition: background-color .3s;
 }
 
-.modal__close_d{
+.modal__close_k {
   text-decoration: none;
   color: #fff;
   background-color: #ffa755;
   padding: 1em 3em;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 6px;
   display: inline-block;
   font-weight: 300;
   transition: background-color .3s;
 }
-.modal__close:hover{
+
+.modal__close_s {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffa755;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+}
+
+.modal__close_d {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffa755;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+}
+
+.modal__close:hover {
   color: #ffa755;
   background-color: #fff;
 }
 
 
 @media (max-width:800px) {
-  .nav__list{
-      display: none;
+  .nav__list {
+    display: none;
   }
 
-  .nav__menu{
-      display: block;
+  .nav__menu {
+    display: block;
   }
 
-  .hero__main{
-      grid-template-columns: 1fr;
-      grid-template-rows:max-content max-content ;
-      text-align: center;
+  .hero__main {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    text-align: center;
   }
 
-  .hero__picture{
-      grid-row: 1/2;
+  .hero__picture {
+    grid-row: 1/2;
   }
 
-  .hero__img{
-      max-width: 500px;
-      display: block;
-      margin: 0 auto;
+  .hero__img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
   }
 
-  .modal__container{
-      padding: 2em 1.5em;
+  .modal__container {
+    padding: 2em 1.5em;
   }
 
-  .modal__title{
-      font-size: 2rem;
+  .modal__title {
+    font-size: 2rem;
+  }
+
+  .inicio {
+    flex-flow: column-reverse;
+  }
+
+  .inicio .imginicio img {
+    width: 90%;
+  }
+
+  .inicio .contentinicio h3 {
+    font-size: 3.rem;
+  }
+
+  .inicio .contentinicio p {
+    font-size: 1.5rem;
   }
 }
+
+/*inicio*/
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5 rem;
+  padding-bottom: 2rem;
+}
+/*
+.btn-inicio {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem, 3rem;
+  border-radius: 2rem;
+  background-color: rgb(255, 244, 121);
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  transition: all .3s linear;
+
+}
+
+.btn-inicio:hover {
+  transform: scale(1.1);
+}
+*/
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/Index/Forest2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio .imginicio img {
+  width: 40vw;
+}
+
+/*@keyframes float {
+  0%, 100%{
+    transform: translateY(0rem); 
+  }
+  50%{
+    transform: translateY(-3.5rem);
+  }
+}*/
+
+.inicio .contentinicio h3 {
+  font-size: 5rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.inicio .contentinicio h3 span {
+  color:black;
+  text-transform:capitalize;
+}
+
+.inicio .contentinicio p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 1rem 0;
+
+}
+
