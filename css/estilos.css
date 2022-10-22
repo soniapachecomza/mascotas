@@ -778,10 +778,11 @@ body {
 }
 
 .modal__title{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .modal__paragraph{
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -793,7 +794,7 @@ body {
 .modal__close_v{
   text-decoration: none;
   color: #fff;
-  background-color: #F26250;
+  background-color: #ffa755;
   padding: 1em 3em;
   border: 1px solid ;
   border-radius: 6px;
@@ -804,7 +805,7 @@ body {
 .modal__close_c{
   text-decoration: none;
   color: #fff;
-  background-color: #F26250;
+  background-color: #ffa755;
   padding: 1em 3em;
   border: 1px solid ;
   border-radius: 6px;
@@ -815,7 +816,7 @@ body {
 .modal__close_mym{
   text-decoration: none;
   color: #fff;
-  background-color: #F26250;
+  background-color: #ffa755;
   padding: 1em 3em;
   border: 1px solid ;
   border-radius: 6px;
@@ -827,7 +828,7 @@ body {
 .modal__close_k{
   text-decoration: none;
   color: #fff;
-  background-color: #F26250;
+  background-color: #ffa755;
   padding: 1em 3em;
   border: 1px solid ;
   border-radius: 6px;
@@ -839,7 +840,7 @@ body {
 .modal__close_s{
   text-decoration: none;
   color: #fff;
-  background-color: #F26250;
+  background-color: #ffa755;
   padding: 1em 3em;
   border: 1px solid ;
   border-radius: 6px;
@@ -851,7 +852,7 @@ body {
 .modal__close_d{
   text-decoration: none;
   color: #fff;
-  background-color: #F26250;
+  background-color: #ffa755;
   padding: 1em 3em;
   border: 1px solid ;
   border-radius: 6px;
@@ -860,7 +861,7 @@ body {
   transition: background-color .3s;
 }
 .modal__close:hover{
-  color: #F26250;
+  color: #ffa755;
   background-color: #fff;
 }
 
