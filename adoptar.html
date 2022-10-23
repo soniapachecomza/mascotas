@@ -14,28 +14,37 @@
 	<link rel="icon" type="image/jpg" href="./img/favicon.png" />
 	<!--CSS-->
 	<link rel="stylesheet" href="css/estilos.css">
+	<script defer src="./js/index.js"></script>
+	<script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<div class="contenedor">
-		<nav>
-			<a class="logotipo" href="index.html"><img src="./img/Logo.png" class="logotipo"></a>
-			<div class="enlaces">
-				<a href="index.html">Inicio</a>
-				<a href="adoptar.html">Adopciones</a>
-				<a href="producto.html">Producto</a>
-				<a href="contacto.html">Contacto</a>
-				<button class="switch" id="active">
-					<span><i class="uil uil-sun"></i></span>
-					<span><i class="uil uil-moon"></i></span>
-				</button>
-				<button class="usuario" id="user">
-					<a href="ingresar.html" class="ingreso">Ingresar <i class="uil uil-user"></i></a>
-				</button>
-			</div>
+	<header class="header">
+		<nav class="nav">
+			<a href="#" class="logo nav-link"><img src="./img/logo.png" alt=""></a>
+			<button class="nav-toggle" aria-label="Abrir menú">
+				<i class="fas fa-bars"></i>
+			</button>
+			<ul class="nav-menu">
+				<li class="nav-menu-item">
+					<a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="adoptar.html" class="nav-menu-link nav-link">Adopciones</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="producto.html" class="nav-menu-link nav-link">Productos</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
+				</li>
+				<li>
+				<li class="nav-menu-item">
+					<a href="ingresar.html" class="nav-menu-link nav-link">Ingresar</a>
+				</li>
+			</ul>
 		</nav>
-
-
+	</header>
 		<section class="grid">
 			<div class="card">
 				<img src="./img/Index/1-1.jpg" alt="">
@@ -99,6 +108,7 @@
 			</div>
 		</section>
 	</div>
+	<!--modal-->
 	<section class="modalv">
 		<div class="modal__container">
 			<img src="./img/Index/1-2.jpg" class="modal__img">
@@ -150,10 +160,12 @@
 		<div class="modal__container">
 			<img src="./img/Index/ellio2.jpg" class="modal__img">
 			<h2 class="modal__title">Info del peludito</h2>
-			<p class="modal__paragraph">Es muy bueno con las personas y con los niños. No se lleva bien con otros perros.
+			<p class="modal__paragraph">Es muy bueno con las personas y con los niños. No se lleva bien con otros
+				perros.
 				<li>Tamaño: Grande.</li>
 				<li>Edad: 2 años.</li>
-				<li>Castrado: Si.</li></p>
+				<li>Castrado: Si.</li>
+			</p>
 			<a href="#" class="modal__close_s">Volver</a>
 		</div>
 	</section>
@@ -170,6 +182,7 @@
 		</div>
 	</section>
 	<script src="./js/main.js"></script>
+	<script src="./js/modal.js"></script>
 </body>
 
 <footer class="pie-pagina">

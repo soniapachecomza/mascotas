@@ -14,26 +14,7 @@
 	<link rel="icon" type="image/jpg" href="./img/favicon.png" />
 	<!--CSS-->
 	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="./ir-arriba/fonts.css">
-</head>
-
-<body>
-	<div class="contenedor">
-		<nav>
-			<a class="logotipo" href="index.html"><img src="./img/Logo.png" class="logotipo"></a>
-			<div class="enlaces">
-				<a href="index.html">Inicio</a>
-				<a href="adoptar.html">Adopciones</a>
-				<a href="producto.html">Producto</a>
-				<a href="contacto.html">Contacto</a>
-				<button class="switch" id="active">
-					<span><i class="uil uil-sun"></i></span>
-					<span><i class="uil uil-moon"></i></span>
-				</button>
-			</div>
-		</nav>
-
-	</div>
+	<script src="https://kit.fontawesome.com/f2551d92a1.js" crossorigin="anonymous"></script>
 	<!--script de Bootstrap-->
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -42,6 +23,37 @@
 
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>
+	<script defer src="./js/index.js"></script>
+	<script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav">
+			<a href="#" class="logo nav-link"><img src="./img/logo.png" alt=""></a>
+			<button class="nav-toggle" aria-label="Abrir menú">
+				<i class="fas fa-bars"></i>
+			</button>
+			<ul class="nav-menu  ">
+				<li class="nav-menu-item">
+					<a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="adoptar.html" class="nav-menu-link nav-link">Adopciones</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="producto.html" class="nav-menu-link nav-link">Productos</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
+				</li>
+				<li>
+				<li class="nav-menu-item">
+					<a href="ingresar.html" class="nav-menu-link nav-link">Ingresar</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	<main>
 		<section class="inicio" id="inicio">
 			<div class="contentinicio">
@@ -58,158 +70,169 @@
 			</div>
 		</section>
 
+		<section class="cartagir">
+			<div class="titulo_index">
+				<h1>
+					<p>7</p>tips a tener en cuenta a la hora de adoptar
+				</h1>
+			</div>
+			<div class="container__card">
 
-		<div class="titulo_index">
-			<h1>
-				<p>7</p>tips a tener en cuenta a la hora de adoptar
-			</h1>
-		</div>
-		<div class="container__card">
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado1.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
 
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado1.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
-
+							</div>
 						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>La elección del animal</h1>
-							<p>Como primer paso es importante hacerse la pregunta de si de verdad se quiere sumar un
-								animal a la familia y por qué. Esto tiene que ver con el tiempo que se le puede dedicar
-								al nuevo integrante. En ese sentido es fundamental saber que se requerirá de paciencia y
-								perseverancia.</p>
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>La elección del animal</h1>
+								<p>Como primer paso es importante hacerse la pregunta de si de verdad se quiere sumar un
+									animal a la familia y por qué. Esto tiene que ver con el tiempo que se le puede
+									dedicar
+									al nuevo integrante. En ese sentido es fundamental saber que se requerirá de
+									paciencia y
+									perseverancia.</p>
 
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado5.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado5.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
 
+							</div>
 						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>Alimentación</h1>
-							<p>Es muy importante que los animales basen su alimentación en una dieta balanceada que
-								satisfaga sus necesidades energéticas y proporcione los nutrientes adecuados.
-								En periodos de gestación o lactancia se debe incrementar a perras y gatas la ración
-								sobre todo durante la lactancia a razón de 1,5 veces la cantidad necesaria.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado4.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
-
-						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>Higiene</h1>
-							<p>Con respecto a la higiene los especialistas difieren en la frecuencia. En general no
-								debería ser inferior a una vez al mes. Algunos autores señalan que se debe hacer cuando
-								lo necesitan, por ejemplo cuando el pelo está sucio.</p>
-
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>Alimentación</h1>
+								<p>Es muy importante que los animales basen su alimentación en una dieta balanceada que
+									satisfaga sus necesidades energéticas y proporcione los nutrientes adecuados.
+									En periodos de gestación o lactancia se debe incrementar a perras y gatas la ración
+									sobre todo durante la lactancia a razón de 1,5 veces la cantidad necesaria.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado6.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado4.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
 
+							</div>
 						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>Educación</h1>
-							<p>Los perros son animales sociales y jerárquicos lo que significa que necesitan desde
-								cachorros conocer y asumir su rol en la familia y fuera de ella: ya sea en la plaza o
-								ante personas extrañas.Es indispensable enseñarles normas de convivencia básicas
-								mediante el aprendizaje de conductas de obediencia muy sencillas.</p>
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>Higiene</h1>
+								<p>Con respecto a la higiene los especialistas difieren en la frecuencia. En general no
+									debería ser inferior a una vez al mes. Algunos autores señalan que se debe hacer
+									cuando
+									lo necesitan, por ejemplo cuando el pelo está sucio.</p>
 
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado7.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
-
-						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>Ciclo sexual y esterilización</h1>
-							<p>Las perras pueden tener su primer celo entre los 6 y 10 meses de edad. Las gatas pueden
-								tener varios celos seguidos y sus ciclos están influidos por la temperatura ambiental y
-								la luz solar. La esteilización incrementa su calidad y esperanza de vida.</p>
-
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado2.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado6.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
 
+							</div>
 						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>Veterinario</h1>
-							<p>Una vez que se eligió el veterinario de confianza es necesario llevalos para un control.
-								En general tanto los gatos como los perros precisan ser desparasitados y vacunados. El
-								calendario de vacunación lo establecerá el especialista.</p>
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>Educación</h1>
+								<p>Los perros son animales sociales y jerárquicos lo que significa que necesitan desde
+									cachorros conocer y asumir su rol en la familia y fuera de ella: ya sea en la plaza
+									o
+									ante personas extrañas.Es indispensable enseñarles normas de convivencia básicas
+									mediante el aprendizaje de conductas de obediencia muy sencillas.</p>
 
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(img/Index/Perro_adoptado3.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
-
-						</div>
-					</div>
-					<div class="card__back">
-						<div class="body__card_back">
-							<h1>Ejercicio físico</h1>
-							<p>Para que la animal esté sano y en forma, debe hacer ejercicio periódicamente. Sin
-								embargo, hay que evitar las horas del día en que hace más calor; ya que el perro tiende
-								descansar en esas horas. Además, como las personas, los perros sufren lesiones, tirones,
-								esguinces, por lo que habrá que controlar su actividad física y procurar que no se
-								exceda en el ejercicio ni realice actividades peligrosas.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-		</div>
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado7.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
+
+							</div>
+						</div>
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>Ciclo sexual y esterilización</h1>
+								<p>Las perras pueden tener su primer celo entre los 6 y 10 meses de edad. Las gatas
+									pueden
+									tener varios celos seguidos y sus ciclos están influidos por la temperatura
+									ambiental y
+									la luz solar. La esteilización incrementa su calidad y esperanza de vida.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado2.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
+
+							</div>
+						</div>
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>Veterinario</h1>
+								<p>Una vez que se eligió el veterinario de confianza es necesario llevalos para un
+									control.
+									En general tanto los gatos como los perros precisan ser desparasitados y vacunados.
+									El
+									calendario de vacunación lo establecerá el especialista.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__father">
+					<div class="card">
+						<div class="card__front" style="background-image: url(img/Index/Perro_adoptado3.jpg);">
+							<div class="bg"></div>
+							<div class="body__card_front">
+
+							</div>
+						</div>
+						<div class="card__back">
+							<div class="body__card_back">
+								<h1>Ejercicio físico</h1>
+								<p>Para que la animal esté sano y en forma, debe hacer ejercicio periódicamente. Sin
+									embargo, hay que evitar las horas del día en que hace más calor; ya que el perro
+									tiende
+									descansar en esas horas. Además, como las personas, los perros sufren lesiones,
+									tirones,
+									esguinces, por lo que habrá que controlar su actividad física y procurar que no se
+									exceda en el ejercicio ni realice actividades peligrosas.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
 	</main>
 </body>
 <br><br>
