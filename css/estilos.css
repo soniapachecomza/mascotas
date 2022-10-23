@@ -182,13 +182,12 @@ span {
     top: 60px;
     width: 100%;
     padding: 20px 0;
-
     height: calc(100% - 60px);
     overflow-y: auto;
-
     left: 100%;
     transition: left 0.3s;
     position:fixed;
+    z-index:0 !important;
   }
 
   .nav-menu-item {
@@ -249,6 +248,7 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 40px 0;
   place-items: center;
+  
 }
 
 .grid .card {
@@ -602,11 +602,12 @@ span {
   font-weight: lighter;
   text-align: center;
   text-decoration-line: underline;
+  
 }
 
 .titulo_index p {
   font-size: 50px;
-  position: relative;
+  
 }
 
 * {
