@@ -991,3 +991,12 @@ section {
 
 }
 
+#app{
+ display: flex;
+ justify-content: center;
+ padding-bottom: 2rem;
+}
+
+.fotoJson{
+  border-radius: 3%;
+}
