@@ -211,6 +211,12 @@ span {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
+  .cartagir{
+    z-index: 999 ;
+  }
+  .card__father{
+    z-index: 999;
+  }
 }
 .ingreso {
   left: 15px;
