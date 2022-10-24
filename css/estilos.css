@@ -158,6 +158,73 @@ span {
 }
 
 
+@media (max-width: 600px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #ffdf77;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    position:fixed;
+    z-index:0 !important;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .cartagir{
+    z-index: 999 ;
+  }
+  .card__father{
+    z-index: 999;
+  }
+  .contentinicio{
+   text-align: center;
+   margin-block-start: auto;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   body {
     padding-top: 70px;
@@ -218,6 +285,75 @@ span {
     z-index: 999;
   }
 }
+
+
+
+@media (max-width: 1200px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #ffdf77;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    position:fixed;
+    z-index:0 !important;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .cartagir{
+    z-index: 999 ;
+  }
+  .card__father{
+    z-index: 999;
+  }
+}
+
+
+
+
+
+
 .ingreso {
   left: 15px;
   color: #fff;
